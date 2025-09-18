@@ -19,10 +19,3 @@ DB_CONFIG = {
     "password": DB_PASS
 }
 
-
-print(repr(DB_NAME))
-print(repr(DB_USER))
-print(repr(DB_PASS))
-print(repr(DB_HOST))
-print(repr(DB_PORT))
-
