@@ -16,6 +16,7 @@ class ContactQueries:
                     """
 
             execute_query(query=query, params=params)
+            print("Added contact")
             return True
         except Exception as e:
             print(e)
@@ -26,6 +27,7 @@ class ContactQueries:
         query = "UPDATE contacts SET name = %s WHERE phone = %s"
         params = (name, phone)
         execute_query(query=query, params=params)
+        print("Updated contact")
         return True
 
     @staticmethod
@@ -33,4 +35,5 @@ class ContactQueries:
         query = "DELETE FROM contacts WHERE phone = %s"
         params = (phone,)
         execute_query(query=query, params=params)
+        print("Deleted contact")
         return True
